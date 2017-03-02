@@ -1,0 +1,68 @@
+<!Doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="renderer" content="webkit">
+
+    <title>Bootstrap 实例 - 折叠面板</title>
+    <link rel="stylesheet" href="../static/css/page.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css"/>
+
+    <script type="text/javascript" src="../static/js/jquery-3.1.1.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap-theme.css"/>
+    <script type="text/javascript" src="../static/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseOne">
+                    点击我进行展开，再次点击我进行折叠。第 1 部分
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <img src="../static/img/index-bg.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseTwo">
+                    点击我进行展开，再次点击我进行折叠。第 2 部分
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                <img src="../static/img/1v26mkwlr.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseThree">
+                    点击我进行展开，再次点击我进行折叠。第 3 部分
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                <img src="../static/img/1nxfng7kl.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
