@@ -21,36 +21,38 @@
 
 <body>
 
+<nav class="" style="background-color: rgba(0,0,0,1);border-radius: 0;">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <span class="navbar-brand" style="color: #ffffff">Goskyer</span>
+        </div>
+
+        <button type="button" class="btn navbar-btn navbar-right "
+                style="background-color: #ffffff;margin-right: 8px">
+            Login
+        </button>
+
+        <ul class="nav navbar-nav navbar-right" style=" margin-right: 8px">
+            <li><a href="#" style="color: white">Index</a></li>
+            <li><a href="#" style="color: white">Member</a></li>
+            <li><a href="#" style="color: white">About</a></li>
+        </ul>
+
+    </div>
+</nav>
+
 <section class="section-wrap">
 
     <div class="section section-1">
 
-        <nav class="" style="background-color: rgba(0,0,0,0.6);border-radius: 0;">
+        <!--<div style="align-content: center;padding-top: 250px;">-->
 
-            <div class="container-fluid">
-
-                <div class="navbar-header">
-                    <span class="navbar-brand" style="color: #ffffff">Goskyer</span>
-                </div>
-
-                <button type="button" class="btn navbar-btn navbar-right "
-                        style="background-color: #ffffff;margin-right: 0px">
-                    Login
-                </button>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" style="color: white">Index</a></li>
-                    <li><a href="#" style="color: white">Member</a></li>
-                    <li><a href="#" style="color: white">About</a></li>
-                </ul>
-
-            </div>
-        </nav>
-
-        <div style="align-content: center;padding-top: 250px;">
+        <div class="container" style="position: absolute;top:55%;left:50%;transform:translate(-50%, -50%);">
             <div class="header-maintext" style="">Welcome on <span class="header-maintext-name">Goskyer</span></div>
             <div class="header-text" style="color: #a2a2a2">We are a github organization with years of coding
-                experiences and with intelligent
+                experiences and with intellectual
                 programmers.
             </div>
         </div>
@@ -58,28 +60,20 @@
     </div>
 
     <div class="section section-2">
-        <div class="title">
-            <p class="tit">随便写写意思下!</p>
-        </div>
+
     </div>
 
     <div class="section section-3">
-        <div class="title">
-            <p class="tit">随便写写意思下</p>
-        </div>
+
     </div>
 
-    <div class="section section-4">
-        <div class="title">
-            <p class="tit">随便写写意思下</p>
-        </div>
-    </div>
+    <!--<div class="section section-4">-->
 
-    <div class="section section-5">
-        <div class="title">
-            <p class="tit">随便写写意思下</p>
-        </div>
-    </div>
+    <!--</div>-->
+
+    <!--<div class="section section-5">-->
+    <!---->
+    <!--</div>-->
 
 </section>
 
@@ -87,8 +81,8 @@
     <li class="on"></li>
     <li></li>
     <li></li>
-    <li></li>
-    <li></li>
+    <!--<li></li>-->
+    <!--<li></li>-->
 </ul>
 
 <!--<div class="arrow">&laquo;</div>-->
@@ -106,15 +100,18 @@
         /*当前页面赋值*/
         function up() {
             i++;
+
             if (i == $btn.length) {
-                i = 0
+//                i = 0;
+                i = $btn.length - 1;
             }
         }
 
         function down() {
             i--;
             if (i < 0) {
-                i = $btn.length - 1
+//                i = $btn.length - 1;
+                i = 0;
             }
         }
 
@@ -178,14 +175,23 @@
             var key = e.keyCode || e.which || e.charCode;
 
             switch (key) {
+                case 37:
+                    down();
+                    run();
+                    break;
                 case 38:
                     down();
+                    run();
+                    break;
+                case 39:
+                    up();
                     run();
                     break;
                 case 40:
                     up();
                     run();
                     break;
+
             }
 
             setTimeout(function () {
